@@ -1,0 +1,130 @@
+/* REMOVE COLORS */
+.blue
+{
+	background-color: blue
+}
+
+.red
+{
+	background-color: red
+}
+
+.green
+{
+	background-color: green
+}
+
+.aqua
+{	
+	background-color: aqua
+}
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.row
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	color: white;
+	font-weight: bold;
+	padding-left: 12%;
+	padding-right: 12%;
+	border-bottom: 3px solid white;
+
+	flex-wrap: wrap;
+}
+
+.col
+{
+	padding: 12px;
+}
+
+.col > .content
+{
+	background-color: #333;
+}
+
+$base: 8.3334%;
+
+.col-quarter
+{
+	width: 25%;
+}
+
+.col-third
+{
+	width: 33.3339%;
+}
+
+.col-1
+{
+	width: $base * 1;
+}
+
+.col-2
+{
+	width: $base * 2;
+}
+
+.col-3
+{
+	width: $base * 3;
+}
+
+.col-4
+{
+	width: $base * 4;
+}
+
+.col-5
+{
+	width: $base * 5;
+}
+
+.col-6
+{
+	width: $base * 6;
+}
+
+.col-7
+{
+	width: $base * 7;
+}
+
+.col-8
+{
+	width: $base * 8;
+}
+
+.col-9
+{
+	width: $base * 9;
+}
+
+.col-10
+{
+	width: $base * 10;
+}
+
+.col-11
+{
+	width: $base * 11;
+}
+
+.col-12
+{
+	width: $base * 12;
+}
+

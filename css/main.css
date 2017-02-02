@@ -1,0 +1,127 @@
+/* REMOVE COLORS */
+/* line 3, ../scss/main.scss */
+.blue {
+  background-color: blue;
+}
+
+/* line 8, ../scss/main.scss */
+.red {
+  background-color: red;
+}
+
+/* line 13, ../scss/main.scss */
+.green {
+  background-color: green;
+}
+
+/* line 18, ../scss/main.scss */
+.aqua {
+  background-color: cyan;
+}
+
+/* line 23, ../scss/main.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 26, ../scss/main.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 32, ../scss/main.scss */
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  color: white;
+  font-weight: bold;
+  padding-left: 12%;
+  padding-right: 12%;
+  border-bottom: 3px solid white;
+  flex-wrap: wrap;
+}
+
+/* line 50, ../scss/main.scss */
+.col {
+  padding: 12px;
+}
+
+/* line 55, ../scss/main.scss */
+.col > .content {
+  background-color: #333;
+}
+
+/* line 62, ../scss/main.scss */
+.col-quarter {
+  width: 25%;
+}
+
+/* line 67, ../scss/main.scss */
+.col-third {
+  width: 33.3339%;
+}
+
+/* line 72, ../scss/main.scss */
+.col-1 {
+  width: 8.3334%;
+}
+
+/* line 77, ../scss/main.scss */
+.col-2 {
+  width: 16.6668%;
+}
+
+/* line 82, ../scss/main.scss */
+.col-3 {
+  width: 25.0002%;
+}
+
+/* line 87, ../scss/main.scss */
+.col-4 {
+  width: 33.3336%;
+}
+
+/* line 92, ../scss/main.scss */
+.col-5 {
+  width: 41.667%;
+}
+
+/* line 97, ../scss/main.scss */
+.col-6 {
+  width: 50.0004%;
+}
+
+/* line 102, ../scss/main.scss */
+.col-7 {
+  width: 58.3338%;
+}
+
+/* line 107, ../scss/main.scss */
+.col-8 {
+  width: 66.6672%;
+}
+
+/* line 112, ../scss/main.scss */
+.col-9 {
+  width: 75.0006%;
+}
+
+/* line 117, ../scss/main.scss */
+.col-10 {
+  width: 83.334%;
+}
+
+/* line 122, ../scss/main.scss */
+.col-11 {
+  width: 91.6674%;
+}
+
+/* line 127, ../scss/main.scss */
+.col-12 {
+  width: 100.0008%;
+}
