@@ -36,7 +36,7 @@ $baseColumnPadding: 12px;
 .row.centered-cols {	justify-content: center; }
 
 /* Sets XS Default Padding Between Columns */
-.col { padding: 0 $baseColumnPadding; }
+.col { padding: 0 $baseColumnPadding; border: 1px solid red;}
 
 /* Removes padding in Nested Rows */
 .row .row {	padding-left: 0%; padding-right: 0%; }
