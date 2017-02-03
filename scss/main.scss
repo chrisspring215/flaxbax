@@ -1,32 +1,21 @@
-/* REMOVE COLORS */
-.blue
-{
-	background-color: blue
-}
+/* Should be included in a CSS reset, not in the Grid SCSS */
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
 
-.red
-{
-	background-color: red
-}
+/* Should be included in a CSS reset, not in the Grid SCSS */
+html, body { margin: 0; }
 
-.green
-{
-	background-color: green
-}
+/* Should be included in a CSS reset, not in the Grid SCSS */
+img { width: 100%; }
 
-.aqua
-{	
-	background-color: aqua
-}
+/* Base Padding for Rows */
+$baseRowPadding: 12%;
 
+/* Base percentage For All Columns */
+$baseColumnWidth: 8.3334%;
 
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
+/* Sets Base Column Padding */
+$baseColumnPadding: 12px;
 
 .row
 {
@@ -37,94 +26,100 @@ html {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
-	color: white;
-	font-weight: bold;
-	padding-left: 12%;
-	padding-right: 12%;
-	border-bottom: 3px solid white;
+	        flex-wrap: wrap;
 
-	flex-wrap: wrap;
+	padding-left: $baseRowPadding - $baseRowPadding;
+	padding-right: $baseRowPadding - $baseRowPadding;
 }
 
-.col
-{
-	padding: 12px;
+/* Centers a column in a row*/
+.row.centered-cols {	justify-content: center; }
+
+/* Sets XS Default Padding Between Columns */
+.col { padding: 0 $baseColumnPadding; }
+
+/* Removes padding in Nested Rows */
+.row .row {	padding-left: 0%; padding-right: 0%; }
+.row .col .row {margin-left: -$baseColumnPadding; margin-right: -$baseColumnPadding; }
+
+
+/* STANDARD WIDTHS */
+.col-quarter { width: 25%; }
+.col-third   { width: 33.3339%; }
+.col-half    { width: 50%; }
+.col-full    { width: 100%; }
+
+/* Screen Widths up to 480px; */
+.col-1-xs  { width: $baseColumnWidth * 1; }
+.col-2-xs  { width: $baseColumnWidth * 2; }
+.col-3-xs  { width: $baseColumnWidth * 3; }
+.col-4-xs  { width: $baseColumnWidth * 4; }
+.col-5-xs  { width: $baseColumnWidth * 5; }
+.col-6-xs  { width: $baseColumnWidth * 6; }
+.col-7-xs  { width: $baseColumnWidth * 7; }
+.col-8-xs  { width: $baseColumnWidth * 8; }
+.col-9-xs  { width: $baseColumnWidth * 9; }
+.col-10-xs { width: $baseColumnWidth * 10; }
+.col-11-xs { width: $baseColumnWidth * 11; }
+.col-12-xs { width: $baseColumnWidth * 12; }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+	/* Screen Widths Over 992px; */
+	.col-1-sm  { width: $baseColumnWidth * 1; }
+	.col-2-sm  { width: $baseColumnWidth * 2; }
+	.col-3-sm  { width: $baseColumnWidth * 3; }
+	.col-4-sm  { width: $baseColumnWidth * 4; }
+	.col-5-sm  { width: $baseColumnWidth * 5; }
+	.col-6-sm  { width: $baseColumnWidth * 6; }
+	.col-7-sm  { width: $baseColumnWidth * 7; }
+	.col-8-sm  { width: $baseColumnWidth * 8; }
+	.col-9-sm  { width: $baseColumnWidth * 9; }
+	.col-10-sm { width: $baseColumnWidth * 10; }
+	.col-11-sm { width: $baseColumnWidth * 11; }
+	.col-12-sm { width: $baseColumnWidth * 12; }
 }
 
-.col > .content
-{
-	background-color: #333;
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+	.row
+	{
+		/* Add a side padding on larger screens */
+		padding-left: $baseRowPadding;
+		padding-right: $baseRowPadding;
+	}
+
+	/* Screen Widths Over 992px; */
+	.col-1-md  { width: $baseColumnWidth * 1; }
+	.col-2-md  { width: $baseColumnWidth * 2; }
+	.col-3-md  { width: $baseColumnWidth * 3; }
+	.col-4-md  { width: $baseColumnWidth * 4; }
+	.col-5-md  { width: $baseColumnWidth * 5; }
+	.col-6-md  { width: $baseColumnWidth * 6; }
+	.col-7-md  { width: $baseColumnWidth * 7; }
+	.col-8-md  { width: $baseColumnWidth * 8; }
+	.col-9-md  { width: $baseColumnWidth * 9; }
+	.col-10-md { width: $baseColumnWidth * 10; }
+	.col-11-md { width: $baseColumnWidth * 11; }
+	.col-12-md { width: $baseColumnWidth * 12; }
 }
 
-$base: 8.3334%;
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
 
-.col-quarter
-{
-	width: 25%;
+	/* Screen Widths Over 1200px; */
+	.col-1-lg  { width: $baseColumnWidth * 1; }
+	.col-2-lg  { width: $baseColumnWidth * 2; }
+	.col-3-lg  { width: $baseColumnWidth * 3; }
+	.col-4-lg  { width: $baseColumnWidth * 4; }
+	.col-5-lg  { width: $baseColumnWidth * 5; }
+	.col-6-lg  { width: $baseColumnWidth * 6; }
+	.col-7-lg  { width: $baseColumnWidth * 7; }
+	.col-8-lg  { width: $baseColumnWidth * 8; }
+	.col-9-lg  { width: $baseColumnWidth * 9; }
+	.col-10-lg { width: $baseColumnWidth * 10; }
+	.col-11-lg { width: $baseColumnWidth * 11; }
+	.col-12-lg { width: $baseColumnWidth * 12; }
 }
-
-.col-third
-{
-	width: 33.3339%;
-}
-
-.col-1
-{
-	width: $base * 1;
-}
-
-.col-2
-{
-	width: $base * 2;
-}
-
-.col-3
-{
-	width: $base * 3;
-}
-
-.col-4
-{
-	width: $base * 4;
-}
-
-.col-5
-{
-	width: $base * 5;
-}
-
-.col-6
-{
-	width: $base * 6;
-}
-
-.col-7
-{
-	width: $base * 7;
-}
-
-.col-8
-{
-	width: $base * 8;
-}
-
-.col-9
-{
-	width: $base * 9;
-}
-
-.col-10
-{
-	width: $base * 10;
-}
-
-.col-11
-{
-	width: $base * 11;
-}
-
-.col-12
-{
-	width: $base * 12;
-}
-
