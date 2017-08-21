@@ -9,6 +9,7 @@ html, body { margin: 0; }
 img { width: 100%; }
 
 /* Base Padding for Rows */
+/* Set to "0" for no side margins */
 $baseRowPadding: 12%;
 
 /* Base percentage For All Columns */
