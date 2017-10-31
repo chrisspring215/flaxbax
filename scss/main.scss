@@ -125,14 +125,19 @@ $baseColumnPadding: 12px;
 	.col-11-lg { width: $baseColumnWidth * 11; }
 	.col-12-lg { width: $baseColumnWidth * 12; }
 
-	.test {
+	.container {
 		background: lightblue;
 		display: flex;
-		justify-content: center;
-		height: 8em;
+		flex-direction: row;
 		
-		span {	
-			align-self: center;
+		.item {	
+
+			flex-grow: 3
+		}
+
+		.centered {
+			flex-grow: 1;
+			background: red;
 		}
 	}
 }
