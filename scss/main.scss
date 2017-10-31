@@ -67,7 +67,7 @@ $baseColumnPadding: 12px;
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
-	/* Screen Widths Over 992px; */
+	/* Screen Widths Over 768px; */
 	.col-1-sm  { width: $baseColumnWidth * 1; }
 	.col-2-sm  { width: $baseColumnWidth * 2; }
 	.col-3-sm  { width: $baseColumnWidth * 3; }
@@ -124,4 +124,15 @@ $baseColumnPadding: 12px;
 	.col-10-lg { width: $baseColumnWidth * 10; }
 	.col-11-lg { width: $baseColumnWidth * 11; }
 	.col-12-lg { width: $baseColumnWidth * 12; }
+
+	.test {
+		background: lightblue;
+		display: flex;
+		justify-content: center;
+		height: 8em;
+		
+		span {	
+			align-self: center;
+		}
+	}
 }
